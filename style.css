@@ -10,10 +10,10 @@
     align-items: center;
 }
 
-.screen {
+.display {
+    color: black;
     height: 30px;
     width: 250px;
-    background-color: green;
     margin-bottom: 20px;
 }
 

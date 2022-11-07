@@ -28,3 +28,18 @@ function operate(operator, inputOne, inputTwo) {
         return divide(inputOne, inputTwo);
     }
 }
+
+// Adding event listener to a button
+let buttons = document.querySelectorAll('button');
+let display = document.querySelector('.display');
+
+for (i of buttons) {
+    i.addEventListener('click', function(){
+        display.textContent += this.innerHTML;
+        console.log(display.textContent);
+    })   
+}
+// adding the string onto an array upon click
+
+
+// displaying the array as a string
