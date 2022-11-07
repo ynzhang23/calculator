@@ -17,7 +17,14 @@ function divide(inputOne, inputTwo) {
     return inputOne / inputTwo;
 }
 
-console.log(add(3,4));
-console.log(subtract(3,4));
-console.log(multiply(3,4));
-console.log(divide(3,0));
+function operate(operator, inputOne, inputTwo) {
+    if(operator === "+") {
+        return add(inputOne, inputTwo);
+    } else if(operator === "-") {
+        return subtract(inputOne, inputTwo);
+    } else if(operator === "*") {
+        return multiply(inputOne, inputTwo);
+    } else if(operator === "/") {
+        return divide(inputOne, inputTwo);
+    }
+}
