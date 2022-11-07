@@ -1,0 +1,41 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+}
+
+.screen {
+    height: 30px;
+    width: 250px;
+    background-color: green;
+    margin-bottom: 20px;
+}
+
+.keyboard {
+    display: flex;
+}
+
+button {
+    min-width: 50px;
+    flex: 1;
+}
+
+.numbers {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.functions {
+    display: flex;
+    flex-flow: column;
+    height: 180px;
+    margin-left: 30px;
+}
