@@ -29,17 +29,31 @@ function operate(operator, inputOne, inputTwo) {
     }
 }
 
-// Adding event listener to a button
-let buttons = document.querySelectorAll('button');
+let inputOne;
+let inputTwo;
+
+// Adding event listener to number buttons
+let numberButtons = document.querySelectorAll('.numbers');
 let display = document.querySelector('.display');
 
-for (i of buttons) {
-    i.addEventListener('click', function(){
+for (i of numberButtons) {
+    i.addEventListener('click', function() {
         display.textContent += this.innerHTML;
         console.log(display.textContent);
     })   
 }
-// adding the string onto an array upon click
 
+// Adding event listener to function buttons
+let functionButtons = document.querySelectorAll('.functions');
 
-// displaying the array as a string
+for (i of functionButtons) {
+    i.addEventListener('click', function() {
+        this.classList.toggle('triggered');
+        if (inputOne === undefined) {
+            inputOne = display.textContent;
+            display.textContent = '';
+        } else {
+            inputTwo = display.textContent;
+        }
+    }) 
+}

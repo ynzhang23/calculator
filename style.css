@@ -26,14 +26,14 @@ button {
     flex: 1;
 }
 
-.numbers {
+.numberButtons {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     height: 180px;
 }
 
-.functions {
+.functionButtons {
     display: flex;
     flex-flow: column;
     height: 180px;
