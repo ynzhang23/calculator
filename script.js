@@ -51,7 +51,7 @@ for (i of functionButtons) {
     i.addEventListener('click', function() {
         this.classList.toggle('active');
         activeOperator = document.querySelector('.active');
-        console.log(activeOperator);
+        this.classList.toggle('active');
         if (inputOne === undefined) {
             inputOne = display.textContent;
             display.textContent = '';
@@ -68,21 +68,32 @@ equalButton.addEventListener('click', function() {
     switch (activeOperator.textContent) {
         case "+":
             display.textContent = add(inputOne, inputTwo);
+            inputOne = undefined;
+            inputTwo = undefined;
+            //not working
             break;
         case "-":
             display.textContent = subtract(inputOne, inputTwo);
+            inputOne = undefined;
+            inputTwo = undefined;
             break;
         case "*":
             display.textContent = multiply(inputOne, inputTwo);
+            inputOne = undefined;
+            inputTwo = undefined;
             break;
         case "/":
             display.textContent = divide(inputOne, inputTwo);
+            inputOne = undefined;
+            inputTwo = undefined;
             break;
     }
 });
 
-// Upon pressing equal sign
-
-// register number on screen as inputTwo
-
-// execute selected function
+// Create clear button
+let clearButton = document.querySelector('.clear');
+clearButton.addEventListener('click', function() {
+    display.textContent = undefined;
+    inputOne = undefined;
+    inputTwo = undefined;
+})
