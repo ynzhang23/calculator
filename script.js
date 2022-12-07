@@ -83,6 +83,10 @@ equalButton.addEventListener('click', function() {
             inputTwo = undefined;
             break;
         case "/":
+            if (inputTwo == 0) {
+                display.textContent = "What the fuck do you think you are doing, son."
+                break;
+            }
             display.textContent = divide(inputOne, inputTwo);
             inputOne = undefined;
             inputTwo = undefined;

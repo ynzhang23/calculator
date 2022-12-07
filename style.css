@@ -7,14 +7,22 @@
     display: flex;
     flex-direction: column;
     width: 250px;
+    padding: 20px;
     align-items: center;
+    background-color: grey;
 }
 
 .display {
+    display: flex;
+    box-sizing: border-box;
     color: black;
     height: 30px;
     width: 250px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    padding: 10px;
+    background-color: greenyellow;
+    align-items: center;
 }
 
 .keyboard {
